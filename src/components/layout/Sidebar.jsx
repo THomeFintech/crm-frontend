@@ -1,5 +1,6 @@
 // src/components/layout/Sidebar.jsx
 import { NAV_TABS, roleConfig, ROLE_LABELS } from "../../data/constants";
+import logo from "../../assets/logo.PNG";
 
 /**
  * Sidebar — fixed left navigation panel.
@@ -44,7 +45,7 @@ export default function Sidebar({ user, activeTab, onTabChange, onLogout }) {
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "0 16px 18px", borderBottom: "1px solid #1e293b", marginBottom: 16 }}>
         <img
-          src="/src/assets/logo.PNG"
+          src={logo}
           alt="T-Home Fintech"
           style={{
             width:        32,
