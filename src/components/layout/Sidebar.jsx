@@ -1,6 +1,6 @@
 // src/components/layout/Sidebar.jsx
 import { NAV_TABS, roleConfig, ROLE_LABELS } from "../../data/constants";
-import logo from "../../assets/logo.PNG";
+import logo from "../../assets/logo.png";
 
 /**
  * Sidebar — fixed left navigation panel.
