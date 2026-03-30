@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { loginUser } from "../api/authApi";
+import logo from "../assets/logo.png";
 
 // ── EDIT THESE 4 LINES ──
 const LOGO_TYPE = "image";
-const LOGO_SRC = "/src/assets/logo.png";
+const LOGO_SRC = logo;
 const COMPANY_NAME = "T-Home Fintech";
 const COMPANY_TAGLINE = "Your Trusted Partner";
 
