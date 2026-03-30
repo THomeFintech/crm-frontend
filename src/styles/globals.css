@@ -1,0 +1,75 @@
+/* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Cabinet+Grotesk:wght@400;500;700;800;900&display=swap');
+:root {
+  --bg:      #0b0f19;   /* keep dark page bg */
+  --surface: #ffffff;   /* white cards */
+  --surface2: #f1f5f9;  /* light inner surfaces */
+  --border:  #e2e8f0;   /* light borders */
+  --text:    #0f172a;   /* dark text on white cards */
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Cabinet Grotesk', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: var(--bg); }
+::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 3px; }
+
+/* ── ANIMATIONS ── */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDrawer {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── LOADER ── */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--pre);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .sidebar   { display: none; }
+  .main-area { margin-left: 0 !important; padding: 16px !important; }
+  .charts-row { grid-template-columns: 1fr !important; }
+}
