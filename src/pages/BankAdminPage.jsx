@@ -2,7 +2,7 @@
 import { useEffect, useState, useMemo } from "react";
 import KpiCard   from "../components/ui/KpiCard";
 import { fmtAmount, fmtDate } from "../utils/formatters";
-import { getBankDashboard, updateLoanStage } from "../api/bankDashboardApi";
+import { getBankDashboard, updateLoanStage } from "../api/bankDashboardapi";
 import api from "../api/api";
 const BANK_STAGES = [
   { key: "submitted_to_bank",    label: "1. Submitted to Bank",    color: "#0369a1" },
