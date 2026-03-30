@@ -5,7 +5,7 @@ import { loginUser } from "../api/authApi";
 
 // ── EDIT THESE 4 LINES ──
 const LOGO_TYPE = "image";
-const LOGO_SRC = "/src/assets/logo.PNG";
+const LOGO_SRC = "/src/assets/logo.png";
 const COMPANY_NAME = "T-Home Fintech";
 const COMPANY_TAGLINE = "Your Trusted Partner";
 
