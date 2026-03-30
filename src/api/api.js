@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8000", // change if backend port is different
+  baseURL: "https://crm-backend-ki61.onrender.com", // change if backend port is different
   headers: {
     "Content-Type": "application/json",
   },
